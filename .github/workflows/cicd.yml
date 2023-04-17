@@ -3,7 +3,7 @@ name: k8s-workstation
 on:
   push:
     branches: [ develop, main ]
-    tags: ['v*.*.*-*']
+    tags: ['v*.*.*']
 
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }}
