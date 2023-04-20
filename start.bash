@@ -1,5 +1,5 @@
 #!/bin/bash
 
-usermod --password ${SSH_PASSWORD} ${SSH_USER}
+echo "${SSH_USER}:${SSH_PASSWORD}" | chpasswd
 
 /usr/bin/supervisord -c "/etc/supervisor/conf.d/supervisord.conf"
