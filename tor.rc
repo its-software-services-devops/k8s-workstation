@@ -5,4 +5,4 @@ HiddenServiceDir /var/lib/tor/loki/
 HiddenServicePort 80 loki-log-grafana.loki-log.svc.cluster.local:80
 
 HiddenServiceDir /var/lib/tor/argocd/
-HiddenServicePort 80 argocd-server.argocd.svc.cluster.local:80
+HiddenServicePort 443 argocd-server.argocd.svc.cluster.local:443
