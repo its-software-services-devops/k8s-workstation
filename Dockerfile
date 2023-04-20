@@ -23,8 +23,7 @@ RUN mv ./kubectl /usr/local/bin
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY tor.rc /etc/tor/tor.rc
-COPY daemon.bash /scripts/daemon.bash
-COPY start.bash /scripts/start.bash
+COPY scripts/*.bash /scripts/
 
 EXPOSE 80
 

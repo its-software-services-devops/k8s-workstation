@@ -1,2 +1,5 @@
 HiddenServiceDir /var/lib/tor/ssh/
 HiddenServicePort 22 127.0.0.1:8022
+
+HiddenServiceDir /var/lib/tor/loki/
+HiddenServicePort 80 loki-log-production-grafana:80
