@@ -2,4 +2,7 @@ HiddenServiceDir /var/lib/tor/ssh/
 HiddenServicePort 22 127.0.0.1:8022
 
 HiddenServiceDir /var/lib/tor/loki/
-HiddenServicePort 80 loki-log-production-grafana:80
+HiddenServicePort 80 loki-log-grafana.loki-log.svc.cluster.local:80
+
+HiddenServiceDir /var/lib/tor/argocd/
+HiddenServicePort 80 argocd-server.argocd.svc.cluster.local:80
