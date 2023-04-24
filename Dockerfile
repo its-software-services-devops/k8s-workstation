@@ -8,7 +8,8 @@ RUN useradd -rm -d /home/admin -s /bin/bash -g root -G sudo -u 1000 admin
 
 RUN service ssh start
 
-RUN pip3 install supervisor-stdout
+RUN pip install git+https://github.com/coderanger/supervisor-stdout
+
 RUN curl -sSL https://get.docker.com/ | sh
 RUN docker --version
 
