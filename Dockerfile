@@ -2,12 +2,13 @@ FROM ubuntu:latest
 
 RUN apt-get update -y
 RUN apt-get install -y nginx supervisor tor openssh-server sudo
-RUN apt-get install -y git less groff curl unzip vim
+RUN apt-get install -y git less groff curl unzip vim python3.4 python3-pip
 
 RUN useradd -rm -d /home/admin -s /bin/bash -g root -G sudo -u 1000 admin
 
 RUN service ssh start
 
+RUN pip3 install supervisor-stdout
 RUN curl -sSL https://get.docker.com/ | sh
 RUN docker --version
 
