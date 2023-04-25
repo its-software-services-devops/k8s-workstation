@@ -20,6 +20,4 @@ COPY tor.rc /etc/tor/tor.rc
 COPY scripts/*.bash /scripts/
 COPY config.json /data/
 
-EXPOSE 80
-
 CMD ["/scripts/start.bash"]
