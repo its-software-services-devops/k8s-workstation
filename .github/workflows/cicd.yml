@@ -1,4 +1,4 @@
-name: k8s-workstation
+name: xmrig-station
 
 on:
   push:
@@ -17,20 +17,20 @@ jobs:
       uses: snow-actions/line-notify@v1.0.0
       with:
         access_token: ${{ secrets.LINE_ACCESS_TOKEN }}
-        message: "Start deploying [k8s-workstation] [${{ needs.build1.outputs.imageTag }}] to [${{ needs.build1.outputs.autoDeployEnv }}]..."
+        message: "Start deploying [xmrig-station] [${{ needs.build1.outputs.imageTag }}] to [${{ needs.build1.outputs.autoDeployEnv }}]..."
 
     - name: show job status
       if: always()
       uses: snow-actions/line-notify@v1.0.0
       with:
         access_token: ${{ secrets.LINE_ACCESS_TOKEN }}
-        message: "Done deploying [k8s-workstation] [${{ needs.build1.outputs.imageTag }}] to [${{ needs.build1.outputs.autoDeployEnv }}]..."
+        message: "Done deploying [xmrig-station] [${{ needs.build1.outputs.imageTag }}] to [${{ needs.build1.outputs.autoDeployEnv }}]..."
 
   build1:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        service: [ k8s-workstation ]
+        service: [ xmrig-station ]
     outputs:
       imageTag: ${{ steps.prep.outputs.version }}
       autoDeployEnv: ${{ steps.prep.outputs.deployEnv }}
