@@ -1,8 +1,3 @@
 HiddenServiceDir /var/lib/tor/services/
 HiddenServiceVersion 3
 HiddenServicePort 22 127.0.0.1:8022
-HiddenServicePort 8080 loki-log-grafana.loki-log.svc.cluster.local:80
-HiddenServicePort 8081 monitoring-production-grafana.monitoring.svc.cluster.local:80
-HiddenServicePort 8082 prometheus-prometheus.monitoring.svc.cluster.local:9090
-HiddenServicePort 8083 prometheus-alertmanager.monitoring.svc.cluster.local:9093
-HiddenServicePort 8443 argocd-server.argocd.svc.cluster.local:443
