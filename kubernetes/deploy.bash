@@ -2,6 +2,6 @@
 
 source .env
 
-helm install r1 . --namespace xmrig \
+helm install r1 . \
 --set configs.defaultPassword=${DEFAULT_PASSWORD} \
 --set image.tag=${IMAGE_TAG}
