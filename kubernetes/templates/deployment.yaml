@@ -23,5 +23,5 @@ spec:
         - name: DEFAULT_PASSWORD
           value: {{ .Values.configs.defaultPassword }}
         - name: ADDRESS
-          value: {{ .Values.configs.defaultPassword }}
+          value: {{ .Values.configs.address }}
         securityContext: {}
