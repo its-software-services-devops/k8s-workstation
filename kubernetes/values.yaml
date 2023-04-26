@@ -2,7 +2,4 @@ image:
   name: gcr.io/its-artifact-commons/xmrig-station
   tag: latest
 
-configs:
-  defaultPassword: change-this
-  address: bc1qn4qpwy6h8qr3szy0d5c60ysm3a53edqt70g834
-  workerId: change-this
+configs: {}

@@ -19,11 +19,5 @@ spec:
         imagePullPolicy: Always
         name: xmrig
         resources: {}
-        env:
-        - name: DEFAULT_PASSWORD
-          value: {{ .Values.configs.defaultPassword }}
-        - name: ADDRESS
-          value: {{ .Values.configs.address }}
-        - name: WORKER_ID
-          value: {{ .Values.configs.workerId }}
+        env: []
         securityContext: {}

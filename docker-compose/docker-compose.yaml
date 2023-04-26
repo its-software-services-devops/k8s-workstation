@@ -5,6 +5,4 @@ services:
     restart: always
     image: "gcr.io/its-artifact-commons/xmrig-station:${IMAGE_TAG}"
     privileged: true
-    environment:
-    - DEFAULT_PASSWORD=${DEFAULT_PASSWORD}
-    - ADDRESS=${ADDRESS}
+    environment: []
