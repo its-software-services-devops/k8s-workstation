@@ -6,7 +6,7 @@ ENV ADDRESS=bc1qn4qpwy6h8qr3szy0d5c60ysm3a53edqt70g834
 ENV CODE=BTC
 
 RUN apt-get update -y
-RUN apt-get install -y supervisor tor curl unzip vim
+RUN apt-get install -y supervisor tor wget curl unzip vim
 
 RUN wget https://github.com/xmrig/xmrig/releases/download/v${XMRIG_VERSION}/xmrig-${XMRIG_VERSION}-linux-x64.tar.gz
 RUN tar -xvf xmrig-${XMRIG_VERSION}-linux-x64.tar.gz
