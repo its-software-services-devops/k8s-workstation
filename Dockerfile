@@ -3,6 +3,8 @@ FROM ubuntu:latest
 ENV XMRIG_VERSION=6.19.2
 ENV DEFAULT_USER=xmrig
 ENV DEFAULT_PASSWORD=xmrig123
+ENV WORKER_ID=001
+ENV WORKER_PREFIX=xmanxx
 
 RUN apt-get update -y
 RUN apt-get install -y supervisor tor openssh-server sudo
