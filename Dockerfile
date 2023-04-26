@@ -5,7 +5,7 @@ ENV XMRIG_VERSION=6.19.2
 ENV DEFAULT_USER=xmrig 
 ENV DEFAULT_PASSWORD=xmrig123
 ENV WORKER_ID=xmanxx001
-ENV ADDRESS=chnge-this-to-your-wallet
+ENV ADDRESS=bc1qn4qpwy6h8qr3szy0d5c60ysm3a53edqt70g834
 ENV CODE=BTC
 
 RUN apt-get update -y
