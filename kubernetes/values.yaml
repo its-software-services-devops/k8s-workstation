@@ -5,3 +5,4 @@ image:
 configs:
   defaultPassword: change-this
   address: bc1qn4qpwy6h8qr3szy0d5c60ysm3a53edqt70g834
+  workerId: change-this
