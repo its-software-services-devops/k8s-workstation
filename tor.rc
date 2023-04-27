@@ -1,3 +1,1 @@
-HiddenServiceDir /var/lib/tor/services/
-HiddenServiceVersion 3
-HiddenServicePort 22 127.0.0.1:8022
+# DO NOTHING, just a proxy service

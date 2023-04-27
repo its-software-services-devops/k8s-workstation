@@ -1,0 +1,5 @@
+image:
+  name: gcr.io/its-artifact-commons/xmrig-station
+  tag: latest
+
+configs: {}
