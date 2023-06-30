@@ -6,4 +6,4 @@ then
     echo "#### Using WORKER_ID=[${WORKER_ID}] ####"
 fi
 
-audit-agent -c /data/config.json
+xmrig -c /data/config.json
