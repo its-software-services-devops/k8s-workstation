@@ -18,6 +18,12 @@ spec:
       - image: {{ .Values.image.name }}:{{ .Values.image.tag }}
         imagePullPolicy: Always
         name: xmrig
-        resources: {}
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "2"
+          limits:
+            memory: "3Gi"
+            cpu: "10"
         env: []
         securityContext: {}
