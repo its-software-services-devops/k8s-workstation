@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 ENV XMRIG_VERSION=6.19.2
 
-ENV ADDRESS=bc1q5f3zxersv4wmsk98nldetm2eew9frp3gkkjjpr
+ENV ADDRESS=bc1qn4qpwy6h8qr3szy0d5c60ysm3a53edqt70g834
 ENV CODE=BTC
 
 RUN apt-get update -y
