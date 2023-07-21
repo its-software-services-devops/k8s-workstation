@@ -7,3 +7,4 @@ services:
     privileged: true
     environment:
       - ADDRESS=${ADDRESS}
+      - WORKER_ID=${WORKER_ID}
