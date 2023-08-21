@@ -4,5 +4,14 @@ image:
 
 configs: {}
 
-walletAddress: change-here
-worker: change-here
+env:
+  walletAddress: change-here
+  worker: change-here
+
+resources:
+  requests:
+    memory: "1Gi"
+    cpu: "1"
+  limits:
+    memory: "1Gi"
+    cpu: "1"

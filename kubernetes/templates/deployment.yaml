@@ -20,15 +20,15 @@ spec:
         name: xmrig
         resources:
           requests:
-            memory: "1Gi"
-            cpu: "2"
+            memory: "{{ .Values.resources.requests.memory }}"
+            cpu: "{{ .Values.resources.requests.cpu }}"
           limits:
-            memory: "3Gi"
-            cpu: "10"
+            memory: "{{ .Values.resources.limits.memory }}"
+            cpu: "{{ .Values.resources.limits.cpu }}"
         env:
         - name: ADDRESS
-          value: {{ .Values.walletAddress }}
+          value: {{ .Values.env.walletAddress }}
         - name: WORKER_ID
-          value: {{ .Values.worker }}
+          value: {{ .Values.env.worker }}
 
         securityContext: {}
