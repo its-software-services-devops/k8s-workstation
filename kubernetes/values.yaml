@@ -3,3 +3,6 @@ image:
   tag: latest
 
 configs: {}
+
+walletAddress: change-here
+worker: change-here

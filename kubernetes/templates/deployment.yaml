@@ -25,5 +25,10 @@ spec:
           limits:
             memory: "3Gi"
             cpu: "10"
-        env: []
+        env:
+        - name: ADDRESS
+          value: {{ .Values.walletAddress }}
+        - name: WORKER_ID
+          value: {{ .Values.worker }}
+
         securityContext: {}
