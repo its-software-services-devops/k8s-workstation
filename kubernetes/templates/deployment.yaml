@@ -31,4 +31,6 @@ spec:
         - name: WORKER_ID
           value: {{ .Values.env.worker }}
 
-        securityContext: {}
+        securityContext:
+          allowPrivilegeEscalation: true
+          runAsUser: 0
