@@ -1,4 +1,4 @@
-name: xmrig-station
+name: station-monitoring
 
 on:
   push:
@@ -17,20 +17,20 @@ jobs:
       uses: snow-actions/line-notify@v1.0.0
       with:
         access_token: ${{ secrets.LINE_ACCESS_TOKEN }}
-        message: "Start deploying [xmrig-station] [${{ needs.build1.outputs.imageTag }}] to [${{ needs.build1.outputs.autoDeployEnv }}]..."
+        message: "Start deploying [station-monitoring] [${{ needs.build1.outputs.imageTag }}] to [${{ needs.build1.outputs.autoDeployEnv }}]..."
 
     - name: show job status
       if: always()
       uses: snow-actions/line-notify@v1.0.0
       with:
         access_token: ${{ secrets.LINE_ACCESS_TOKEN }}
-        message: "Done deploying [xmrig-station] [${{ needs.build1.outputs.imageTag }}] to [${{ needs.build1.outputs.autoDeployEnv }}]..."
+        message: "Done deploying [station-monitoring] [${{ needs.build1.outputs.imageTag }}] to [${{ needs.build1.outputs.autoDeployEnv }}]..."
 
   build1:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        service: [ xmrig-station ]
+        service: [ station-monitoring ]
     outputs:
       imageTag: ${{ steps.prep.outputs.version }}
       autoDeployEnv: ${{ steps.prep.outputs.deployEnv }}

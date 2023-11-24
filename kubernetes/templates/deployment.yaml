@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: xmrig
-  namespace: xmrig
+  name: station
+  namespace: station
 spec:
-  replicas: 1
+  replicas: {{ .Values.replica }}
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: xmrig
+      app: station
   template:
     metadata:
       labels:
-        app: xmrig
+        app: station
     spec:
       containers:
       - image: {{ .Values.image.name }}:{{ .Values.image.tag }}
         imagePullPolicy: Always
-        name: xmrig
+        name: station
         resources:
           requests:
             memory: "{{ .Values.resources.requests.memory }}"
@@ -30,6 +30,8 @@ spec:
           value: {{ .Values.env.walletAddress }}
         - name: WORKER_ID
           value: {{ .Values.env.worker }}
+        - name: SOCK5_ADDRESS
+          value: {{ .Values.env.sock5Address }}
 
         securityContext:
           allowPrivilegeEscalation: true
