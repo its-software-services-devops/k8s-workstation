@@ -6,4 +6,4 @@ then
     echo "#### Using WORKER_ID=[${WORKER_ID}] ####"
 fi
 
-xmrig -c /data/config.json
+station-monitoring -c /data/config.json
