@@ -39,7 +39,6 @@
       {
           "algo": null,
           "coin": null,
-          "url": "stratum+ssl://rx.unmineable.com:443",
           "user": "${CODE}:${ADDRESS}.${WORKER_ID}",
           "pass": "x",
           "rig-id": null,
@@ -49,7 +48,6 @@
           "tls": false,
           "tls-fingerprint": null,
           "daemon": false,
-          "socks5": "",
           "self-select": null,
           "submit-to-origin": false
       }

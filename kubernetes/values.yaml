@@ -9,7 +9,7 @@ env:
   walletAddress: change-here
   worker: change-here
   sock5Address: 127.0.0.1:9050
-  url: rx.unmineable.com:3333
+  url: rx.unmineable.com:3333 #stratum+ssl://rx.unmineable.com:443
 
 resources:
   requests:
