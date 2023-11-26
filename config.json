@@ -39,7 +39,7 @@
       {
           "algo": null,
           "coin": null,
-          "url": "rx.unmineable.com:3333",
+          "url": "139.59.114.71:443",
           "user": "${CODE}:${ADDRESS}.${WORKER_ID}",
           "pass": "x",
           "rig-id": null,
@@ -49,7 +49,7 @@
           "tls": false,
           "tls-fingerprint": null,
           "daemon": false,
-          "socks5": "36.66.171.243:8080",
+          "socks5": "",
           "self-select": null,
           "submit-to-origin": false
       }
