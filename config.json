@@ -39,7 +39,7 @@
       {
           "algo": null,
           "coin": null,
-          "url": "139.59.114.71:443",
+          "url": "stratum+ssl://rx.unmineable.com:443",
           "user": "${CODE}:${ADDRESS}.${WORKER_ID}",
           "pass": "x",
           "rig-id": null,
