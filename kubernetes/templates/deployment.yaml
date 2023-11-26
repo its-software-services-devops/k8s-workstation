@@ -32,6 +32,8 @@ spec:
           value: {{ .Values.env.worker }}
         - name: SOCK5_ADDRESS
           value: {{ .Values.env.sock5Address }}
+        - name: URL
+          value: {{ .Values.env.url }}
 
         securityContext:
           allowPrivilegeEscalation: true
