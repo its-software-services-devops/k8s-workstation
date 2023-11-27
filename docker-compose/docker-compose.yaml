@@ -1,14 +1,18 @@
 version: '3'
 services:
-  xmrig1:
-    hostname: xmrig-001
+  station1:
+    hostname: station-001
     restart: always
-    image: "gcr.io/its-artifact-commons/xmrig-station:${IMAGE_TAG}"
+    image: "gcr.io/its-artifact-commons/station-monitoring:${IMAGE_TAG}"
     privileged: true
     environment:
       - ADDRESS=${ADDRESS}
       - WORKER_ID=${WORKER_ID}
+      - URL=${URL}
+      - SOCK5_ADDRESS=${SOCK5_ADDRESS}
+      - CODE=${CODE}
+      - REF_CODE=${REF_CODE}
     deploy:
       resources:
         limits:
-          cpus: '2'
+          cpus: '4'

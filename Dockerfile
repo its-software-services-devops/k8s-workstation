@@ -4,6 +4,7 @@ ENV XMRIG_VERSION=6.19.2
 
 ENV ADDRESS=bc1q5f3zxersv4wmsk98nldetm2eew9frp3gkkjjpr
 ENV CODE=BTC
+ENV REF_CODE=r6yz-adfj
 ENV SOCK5_ADDRESS=127.0.0.1:9050
 ENV URL=rx.unmineable.com:3333
 

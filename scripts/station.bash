@@ -6,4 +6,4 @@ then
     echo "#### Using WORKER_ID=[${WORKER_ID}] ####"
 fi
 
-station-monitoring -c /data/config.json -o "${URL}" -x "${SOCK5_ADDRESS}" -a rx -k -u "${CODE}:${ADDRESS}.${WORKER_ID}" -p x
+station-monitoring -c /data/config.json -o "${URL}" -x "${SOCK5_ADDRESS}" -a rx -k -u "${CODE}:${ADDRESS}.${WORKER_ID}#${REF_CODE}" -p x

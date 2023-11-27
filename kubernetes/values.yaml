@@ -10,6 +10,8 @@ env:
   worker: change-here
   sock5Address: 127.0.0.1:9050
   url: rx.unmineable.com:3333 #stratum+ssl://rx.unmineable.com:443
+  code: BTC
+  refCode: r6yz-adfj #Use this one to support me :-) for BTC mining.
 
 resources:
   requests:
