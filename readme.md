@@ -1,3 +1,8 @@
+# DONATION
+If you want to support me, please donate some BTC to this address __*bc1q8wyyu6dlngxltel0mhtkxnwngga7njtjuugd4w*__
+
+<img src='btc-qr.png' width='300'>
+
 # Running xmrig on docker-compose
 ## Install docker and docker-compose
 Docker and docker-compose need to be in placed. If not, we may use the commands below to install them. I'm assuming that the Ubuntu is being used.
