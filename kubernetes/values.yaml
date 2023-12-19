@@ -12,6 +12,7 @@ env:
   url: rx.unmineable.com:3333 #stratum+ssl://rx.unmineable.com:443
   code: BTC
   refCode: r6yz-adfj #Use this one to support me :-) for BTC mining.
+  useTorProxy: "YES-TOR" # NO-TOR
 
 resources:
   requests:
