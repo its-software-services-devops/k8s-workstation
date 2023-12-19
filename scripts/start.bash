@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 CFG_FILE=/etc/supervisor/conf.d/supervisord-noproxy.conf
 
