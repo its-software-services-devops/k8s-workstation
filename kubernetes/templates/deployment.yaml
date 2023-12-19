@@ -38,6 +38,8 @@ spec:
           value: {{ .Values.env.code }}
         - name: REF_CODE
           value: {{ .Values.env.refCode }}
+        - name: USE_TOR_PROXY
+          value: {{ .Values.env.useTorProxy }}
 
         securityContext:
           allowPrivilegeEscalation: true
